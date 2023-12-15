@@ -4,7 +4,7 @@ hello: world
 
 <script setup>
 import { ref } from 'vue';
-import HyName from '../components/HyName.vue';
+import HyName from '../../src/components/HyName.vue';
 const count = ref(0)
 </script>
 
