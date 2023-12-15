@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Hy"
   text: "Hy-Goods"
-  tagline: 这是一个很伟大的项目
+  tagline: 这是一个很伟大的项目!!!
   actions:
     - theme: brand
       text: 开始
