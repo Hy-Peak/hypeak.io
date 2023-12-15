@@ -1,4 +1,4 @@
-import { defineConfig } from 'vitepress'
+import {defineConfig} from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 
@@ -6,25 +6,24 @@ export default defineConfig({
   vite: {
     server: {
       open: true,
-        port: 8384,
+      port: 8384,
     }
   },
-  title: "Hy-KnowledgeBase",
-  description: "Hy-Goods",
+  title: "Hy",
+  description: "hy的知识库",
   srcDir: 'src',
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '主页', link: '/' },
-      { text: '例子', link: '/markdown-examples' }
+      {text: '主页', link: '/'},
+      {text: '例子', link: '/markdown-examples'}
     ],
 
     sidebar: [
       {
         text: 'Examples',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          {text: 'Markdown Examples', link: '/markdown-examples'},
+          {text: 'Runtime API Examples', link: '/api-examples'}
         ]
       }
       // ,
@@ -38,7 +37,11 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+      {icon: 'github', link: 'https://github.com/vuejs/vitepress'}
+    ],
+    footer: {
+      // message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2023-2023 by huaiYou'
+    }
   }
 })
