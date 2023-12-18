@@ -12,6 +12,8 @@ export default defineConfig({
   title: "Hy",
   description: "hy的知识库",
   srcDir: 'src',
+  // 路径
+  base: './',
   themeConfig: {
     nav: [
       {text: '主页', link: '/'},
