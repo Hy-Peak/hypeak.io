@@ -26,6 +26,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           user_name: YourGitHubUsername
-          user_email: your_email@example.com
+          user_email: 111@example.com
           github_token: ${{ secrets.MY_PERSONAL_TOKEN3 }}
           publish_dir: ./.vitepress/dist
