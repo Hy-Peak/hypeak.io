@@ -5,7 +5,7 @@ hello: world
 <script setup>
 import { ref } from 'vue';
 import HyName from '../components/hyName.vue';
-const count = ref(0)
+const count = ref(0);
 </script>
 
 ## Markdown Content
