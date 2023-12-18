@@ -27,5 +27,5 @@ jobs:
         with:
           user_name: YourGitHubUsername
           user_email: 111@example.com
-#          github_token: ${{ secrets.MY_PERSONAL_TOKEN3 }}
+          deploy_key: ${{ secrets.MY_PERSONAL_TOKEN3 }}
           publish_dir: ./.vitepress/dist
