@@ -13,7 +13,7 @@ export default defineConfig({
   description: "hy的知识库",
   srcDir: 'src',
   // 路径
-  base: '../hypeak.io/',
+  base: '/hypeak.io/',
   themeConfig: {
     nav: [
       {text: '主页', link: '/'},
