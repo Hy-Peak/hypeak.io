@@ -6,7 +6,7 @@ hello: world
 import { ref } from 'vue';
 import HyName from '../components/hyName.vue';
 const count = ref(0);
-</script> 
+</script>  
 
 ## Markdown Content
 
