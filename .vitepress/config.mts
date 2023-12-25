@@ -1,7 +1,5 @@
 import {defineConfig} from 'vitepress'
-
 // https://vitepress.dev/reference/site-config
-
 export default defineConfig({
   vite: {
     server: {
@@ -20,23 +18,21 @@ export default defineConfig({
       {text: '例子', link: '/markdown-examples'}
     ],
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          {text: 'Markdown Examples', link: '/markdown-examples'},
-          {text: 'Runtime API Examples', link: '/api-examples'}
-        ]
-      }
-      // ,
-      //   {
-      //       text: 'JavaSciprt',
-      //       items: [
-      //       { text: 'Chinese', link: '/JavaScript/index' },
-      //       { text: 'ChineseL', link: '/language/japanese' }
-      //       ]
-      //   }
-    ],
+    sidebar: {
+      "tool":[
+        {
+          collapsed: true,
+          text: '工具函数',
+          items: [
+            {text: '转换类', link: '/tool/'},
+            {text: '工具2', link: '/tool2/'},
+          ]
+        },
+        {
+          text: '拓展类函数'
+        }
+      ]
+    },
 
     socialLinks: [
       {icon: 'github', link: 'https://github.com/vuejs/vitepress'}

@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
@@ -11,6 +12,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "less": "^4.2.0",
     "unplugin-vue-components": "^0.25.2",
     "vitepress": "^1.0.0-rc.31",
     "vitepress-theme-demoblock": "^3.0.3"

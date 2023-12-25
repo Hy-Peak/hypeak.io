@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /markdown-examples
+      link: /js/
     - theme: alt
-      text: API 示例
-      link: https://vitepress.vuejs.org/api/md.html
+      text: 工具 🛠️
+      link: /tool/
       
 features:
   - title: 强化
