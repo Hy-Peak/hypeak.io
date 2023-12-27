@@ -15,11 +15,31 @@ export default defineConfig({
   themeConfig: {
     nav: [
       {text: '主页', link: '/'},
-      {text: '例子', link: '/markdown-examples'}
+      {
+        text: 'JavaScript',
+        items: [
+          {
+            text: '基础',
+            link: '/js/base/'
+          },
+          {
+            text: '进阶',
+            link: '/js/advanced/'
+          },
+          {
+            text: '框架',
+            link: '/js/framework/'
+          },
+          {
+            text: '工具',
+            link: '/js/tool/'
+          }
+        ]
+      }
     ],
 
     sidebar: {
-      "tool":[
+      "tool": [
         {
           collapsed: true,
           text: '工具函数',
@@ -31,7 +51,7 @@ export default defineConfig({
         {
           text: '拓展类函数'
         }
-      ]
+      ],
     },
 
     socialLinks: [

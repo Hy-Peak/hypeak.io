@@ -1,16 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES5",
-    "module": "CommonJS",
+    "target": "ES6",
+    "module": "ESNext",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "types": ["vue"],
+    "types": ["vue/types/vue"],
+    "moduleResolution": "node",
   },
-  "include": [
-    "*.vue",
-  ],
+  "include": ["src/**/*.ts", "src/**/*.vue","**/*.vue"],
   "exclude": [
     "node_modules"
   ]

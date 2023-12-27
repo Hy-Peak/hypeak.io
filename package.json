@@ -2,9 +2,11 @@
   "name": "hy-vitepress",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "private": true,
   "scripts": {
+    "tsc": "tsc",
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
     "docs:preview": "vitepress preview"
@@ -12,12 +14,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/prismjs": "^1.26.3",
     "less": "^4.2.0",
     "unplugin-vue-components": "^0.25.2",
     "vitepress": "^1.0.0-rc.31",
     "vitepress-theme-demoblock": "^3.0.3"
   },
   "dependencies": {
-    "ant-design-vue": "4.x"
+    "ant-design-vue": "4.x",
+    "clipboard": "^2.0.11",
+    "prettier": "^2.2.1",
+    "prismjs": "^1.29.0"
   }
 }
