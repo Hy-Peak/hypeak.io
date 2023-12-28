@@ -41,13 +41,13 @@ defineProps({
   }
 });
 const codeHeight = ref('');
-onMounted(async () => {
+// onMounted(async () => {
   const Prism:any = inject('Prismjs');
   console.log(Prism);
   codeHeight.value = Prism.highlight(svgCode, Prism.languages.javascript, 'javascript');
   Prism.highlightAll();
 
-})
+// })
 const copyFun = async (str: string) => {
   const copyValFun = await useCopy(str);
   copyValFun && message.success('🎉 复制成功!');
