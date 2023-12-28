@@ -11,8 +11,5 @@ export default {
   Layout,
   enhanceApp({ app, router, siteData }: EnhanceAppContext) {
     app.use(Antd);
-  },
-  setup() {
-    console.log('setup');
   }
 } satisfies Theme;

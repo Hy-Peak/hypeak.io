@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="../../node_modules/prismjs/themes/prism-funky.css">
 <template>
   <a-config-provider :theme="themeConfig">
     <a-watermark content="HyGod" v-bind="{ gap: [400, 200] }">

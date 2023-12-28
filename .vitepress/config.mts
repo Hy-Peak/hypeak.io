@@ -5,11 +5,6 @@ export default defineConfig({
     server: {
       open: true,
       port: 8384
-    },
-    resolve: {
-      alias: {
-        '@/': 'src/'
-      }
     }
   },
   title: 'Hy',
@@ -25,32 +20,31 @@ export default defineConfig({
         items: [
           {
             text: '基础',
-            link: '/js/base/'
+            link: '/jsq/base/'
           },
           {
             text: '进阶',
-            link: '/js/advanced/'
+            link: '/jsq/advanced/'
           },
           {
             text: '框架',
-            link: '/js/framework/'
+            link: '/jsq/framework/'
           },
           {
             text: '工具',
-            link: '/js/tool/'
+            link: '/jsq/tool/'
           }
         ]
       }
     ],
 
     sidebar: {
-      'js/tool': [
+      '/jsq/tool/': [
         {
           collapsed: true,
           text: '工具函数',
           items: [
-            { text: '🛠️杂项', link: '/tool/' },
-            { text: '工具2', link: '/tool2/' }
+            { text: '🛠️杂项', link: '/jsq/tool/' }
           ]
         }
       ]

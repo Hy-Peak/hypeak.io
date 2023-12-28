@@ -9,10 +9,10 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /js/
+      link: /jsq/
     - theme: alt
       text: 工具 🛠️
-      link: /js/tool/
+      link: /tool/
 
 features:
   - title: 强化

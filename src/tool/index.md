@@ -9,8 +9,8 @@ title: Hy-工具类
 
 <script setup>
 import Index from './components/hyExportSvg.vue';
-import { svgCode } from './assets/code/code.ts';
-import hyCode from '../../components/hyCode/index.vue';
+import { svgCode } from './assets/code/code';
+import hyCode from '../components/hyCode/index.vue';
 </script>
 
 <Index/>
