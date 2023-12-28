@@ -1,24 +1,26 @@
 <template>
-  <div class="hy-code">
-    <a-collapse collapsible="header">
-      <template #expandIcon="{ isActive }">
-        <caret-right-outlined :rotate="isActive ? 90 : 0" />
-      </template>
-      <a-collapse-panel key="1">
-        <template #header>Code</template>
-        <template #extra>
-          <a-tooltip title="copy">
-            <CopyOutlined @click="copyFun(code)" />
-          </a-tooltip>
+  <ClientOnly>
+    <div class="hy-code">
+      <a-collapse collapsible="header">
+        <template #expandIcon="{ isActive }">
+          <caret-right-outlined :rotate="isActive ? 90 : 0" />
         </template>
-        <pre>
+        <a-collapse-panel key="1">
+          <template #header>Code</template>
+          <template #extra>
+            <a-tooltip title="copy">
+              <CopyOutlined @click="copyFun(code)" />
+            </a-tooltip>
+          </template>
+          <pre>
         <code>
           <div v-html="codeHeight"></div>
         </code>
       </pre>
-      </a-collapse-panel>
-    </a-collapse>
-  </div>
+        </a-collapse-panel>
+      </a-collapse>
+    </div>
+  </ClientOnly>
 </template>
 
 <script lang="ts" setup>
@@ -32,7 +34,7 @@ import { svgCode } from '../../tool/assets/code/code';
 // import 'prismjs/themes/prism-dark.css';
 
 
-import { onMounted, ref,inject } from 'vue';
+import { onMounted, ref, inject } from 'vue';
 // import   Prism  from 'prismjs';
 defineProps({
   code: {
@@ -42,10 +44,10 @@ defineProps({
 });
 const codeHeight = ref('');
 // onMounted(async () => {
-  const Prism:any = inject('Prismjs');
-  console.log(Prism);
-  codeHeight.value = Prism.highlight(svgCode, Prism.languages.javascript, 'javascript');
-  Prism.highlightAll();
+const Prism: any = inject('Prismjs');
+console.log(Prism);
+codeHeight.value = Prism.highlight(svgCode, Prism.languages.javascript, 'javascript');
+Prism.highlightAll();
 
 // })
 const copyFun = async (str: string) => {
