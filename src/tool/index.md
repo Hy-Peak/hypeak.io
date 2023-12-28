@@ -14,12 +14,16 @@ import { svgCode } from './assets/code/code';
 import hyCode  from '../components/hyCode/index.vue';
 </script>
 
-<Index/>
+<ClientOnly>
+    <Index/>
+</ClientOnly>
+
 -----
 整理下思路:
 * 通过js获取svg的内容
 * 通过canvas转换成png
 * 通过a标签下载
 
-<hyCode :code="svgCode"/>
-
+<ClientOnly>
+    <hyCode :code="svgCode"/>
+</ClientOnly>

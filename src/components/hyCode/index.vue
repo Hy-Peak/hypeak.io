@@ -1,5 +1,4 @@
 <template>
-  <ClientOnly>
     <div class="hy-code">
       <a-collapse collapsible="header">
         <template #expandIcon="{ isActive }">
@@ -20,7 +19,6 @@
         </a-collapse-panel>
       </a-collapse>
     </div>
-  </ClientOnly>
 </template>
 
 <script lang="ts" setup>
