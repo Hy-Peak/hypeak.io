@@ -156,7 +156,7 @@
 import { CheckCircleOutlined } from '@ant-design/icons-vue';
 import { svgCode } from '../assets/code/code';
 import hyCode from '../../components/hyCode/index.vue';
-import { ref, reactive, watch, watchEffect } from 'vue';
+import { ref, reactive,onMounted, watch, watchEffect } from 'vue';
 import { message } from 'ant-design-vue';
 
 const baseUrl = '/hypeak.io/' + 'tool/assets/img/';

@@ -10,7 +10,6 @@ const count = ref(0);
 ## Markdown Content
 
 The count is: {{ count }}
-<HyName />
 <a-input placeholder="Basic usage" />
 <button :class="$style.button" @click="count++">Increment2</button>
 

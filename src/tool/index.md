@@ -8,20 +8,18 @@ title: Hy-工具类
 
 
 <script setup>
+
 import Index from './components/hyExportSvg.vue';
 import { svgCode } from './assets/code/code';
+import hyCode  from '../components/hyCode/index.vue';
 </script>
 
-<ClientOnly>
-    <Index/>
-</ClientOnly>
+<Index/>
 -----
 整理下思路:
 * 通过js获取svg的内容
 * 通过canvas转换成png
 * 通过a标签下载
 
-<ClientOnly>
-    <hyCode :code="svgCode"/>
-</ClientOnly>
+<hyCode :code="svgCode"/>
 
