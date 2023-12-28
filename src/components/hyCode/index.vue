@@ -33,7 +33,7 @@ import { svgCode } from '../../tool/assets/code/code';
 
 
 import { onMounted, ref,inject } from 'vue';
-import   Prism  from 'prismjs';
+// import   Prism  from 'prismjs';
 defineProps({
   code: {
     type: String,
