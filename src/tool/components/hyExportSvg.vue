@@ -64,7 +64,7 @@
     <div style="min-width: 100px;text-align: center">---></div>
     <div>
       <a-tooltip title="png">
-        <a-image alt="webstorm" :src="baseUrl + 'webstorm.png'" />
+        <img alt="webstorm" src="../assets/img/webstorm.png" />
       </a-tooltip>
     </div>
   </div>
