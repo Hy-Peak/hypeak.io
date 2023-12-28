@@ -127,7 +127,6 @@
       </a-card>
     </a-col>
   </a-row>
-
 </template>
 <style lang="less" scoped>
 .exhibitArea {
@@ -217,6 +216,7 @@ const returnFirst = () => {
   stepsControl.pngUrl = '';
   stepsControl.svgDomCode = '';
 };
+
 
 const downloadPng = () => {
   // 使用svgDomCode生成svg
