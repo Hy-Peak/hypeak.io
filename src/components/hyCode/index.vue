@@ -18,7 +18,7 @@
 </template>
 <script lang="ts" setup>
 import { CaretRightOutlined, CopyOutlined } from '@ant-design/icons-vue';
-import { svgCode } from '@/js/tool/assets/code/code';
+import { svgCode } from '@/js/tool/assets/code/code.ts';
 import { useCopy } from '@/utlis/tool';
 import 'prismjs/components/prism-javascript';
 import { message } from 'ant-design-vue';
