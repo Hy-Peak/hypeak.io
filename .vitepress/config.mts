@@ -1,20 +1,25 @@
-import {defineConfig} from 'vitepress'
-// https://vitepress.dev/reference/site-config
+import { defineConfig } from 'vitepress';
+
 export default defineConfig({
   vite: {
     server: {
       open: true,
-      port: 8384,
+      port: 8384
+    },
+    resolve: {
+      alias: {
+        '@/': '/src/'
+      }
     }
   },
-  title: "Hy",
-  description: "hy的知识库",
+  title: 'Hy',
+  description: 'hy的知识库',
   srcDir: 'src',
   // 路径
   base: '/hypeak.io/',
   themeConfig: {
     nav: [
-      {text: '主页', link: '/'},
+      { text: '主页', link: '/' },
       {
         text: 'JavaScript',
         items: [
@@ -39,27 +44,23 @@ export default defineConfig({
     ],
 
     sidebar: {
-      "tool": [
+      'js/tool': [
         {
           collapsed: true,
           text: '工具函数',
           items: [
-            {text: '转换类', link: '/tool/'},
-            {text: '工具2', link: '/tool2/'},
+            { text: '🛠️杂项', link: '/tool/' },
+            { text: '工具2', link: '/tool2/' }
           ]
-        },
-        {
-          text: '拓展类函数'
         }
-      ],
+      ]
     },
 
     socialLinks: [
-      {icon: 'github', link: 'https://github.com/vuejs/vitepress'}
+      { icon: 'github', link: 'https://github.com/Hy-Peak/hypeak.io' }
     ],
     footer: {
-      // message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2023-2023 by huaiYou'
+      copyright: 'Copyright © 2023-2023 hy'
     }
   }
-})
+});

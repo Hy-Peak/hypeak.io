@@ -1,4 +1,4 @@
-export const svgCode = `  /**
+export const svgCode = ` /**
      * 把 svg 转换 png
      * @param svgElement
      * @param width

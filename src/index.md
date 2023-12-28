@@ -12,11 +12,11 @@ hero:
       link: /js/
     - theme: alt
       text: 工具 🛠️
-      link: /tool/
-      
+      link: /js/tool/
+
 features:
   - title: 强化
-    icon:  💪🏻
+    icon: 💪🏻
     details: 加强知识点的记忆,碎片化知识的整理,知识体系的建立
   - title: 尖锐
     icon: 🦄

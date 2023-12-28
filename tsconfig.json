@@ -8,6 +8,10 @@
     "skipLibCheck": true,
     "types": ["vue/types/vue"],
     "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
   },
   "include": ["src/**/*.ts", "src/**/*.vue","**/*.vue"],
   "exclude": [

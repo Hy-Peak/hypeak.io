@@ -13,7 +13,10 @@ module.exports = {
   // 行尾需要有分号
   semi: true,
   // 使用单引号
-  singleQuote: true,
+  // singleQuote: false,
+
+  // 使用双引号
+  singleQuote: false,
   // 对象的 key 仅在必要时用引号
   quoteProps: 'as-needed',
   // jsx 不使用单引号，而使用双引号
@@ -41,13 +44,13 @@ module.exports = {
   htmlWhitespaceSensitivity: 'css',
 
 
-    // 增加 mts 文件的支持
-    overrides: [
-      {
-        files: '*.mts',
-        options: {
-          parser: 'babel',
-        },
-      },
-    ],
+  // 增加 mts 文件的支持
+  overrides: [
+    {
+      files: '*.mts',
+      options: {
+        parser: 'babel'
+      }
+    }
+  ]
 };

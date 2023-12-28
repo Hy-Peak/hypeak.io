@@ -11,33 +11,22 @@
             <CopyOutlined @click="copyFun(code)" />
           </a-tooltip>
         </template>
-        <pre>
-        <code>
-          <div v-html="codeHeight"></div>
-        </code>
-      </pre>
+        <pre> <code> <div v-html="codeHeight"></div> </code> </pre>
       </a-collapse-panel>
     </a-collapse>
   </div>
 </template>
-
-<script setup lang="ts">
+<script lang="ts" setup>
 import { CaretRightOutlined, CopyOutlined } from '@ant-design/icons-vue';
-import { message } from 'ant-design-vue';
-import { useCopy } from '../../../utlis/tool';
-import Prism from 'prismjs';
-import { svgCode } from '../../tool/assets/code/code';
+import { svgCode } from '@/js/tool/assets/code/code';
+import { useCopy } from '@/utlis/tool';
 import 'prismjs/components/prism-javascript';
-import 'prismjs/components/prism-css';
+import { message } from 'ant-design-vue';
 import 'prismjs/themes/prism-dark.css';
+import 'prismjs/components/prism-css';
+import Prism from 'prismjs';
 
-defineProps({
-  code: {
-    type: String,
-    default: ''
-  }
-});
-
+defineProps({ code: { type: String, default: '' } });
 const codeHeight = Prism.highlight(svgCode, Prism.languages.javascript, 'javascript');
 Prism.highlightAll();
 const copyFun = async (str: string) => {
@@ -45,7 +34,6 @@ const copyFun = async (str: string) => {
   copyValFun && message.success('🎉 复制成功!');
 };
 </script>
-
 <style scoped>
 .hy-code {
   margin: 1.5rem 0;
