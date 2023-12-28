@@ -160,7 +160,7 @@ import hyCode from '../../components/hyCode/index.vue';
 import { ref, reactive, watch, watchEffect } from 'vue';
 import { message } from 'ant-design-vue';
 
-const baseUrl = import.meta.env.BASE_URL + '/tool/assets/img/';
+const baseUrl = import.meta.env.BASE_URL + 'tool/assets/img/';
 console.log(baseUrl);
 const stepsControl = reactive({
   current: 0,
