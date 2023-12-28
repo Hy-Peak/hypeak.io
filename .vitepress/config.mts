@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
   vite: {
     server: {
-      open: true,
+      // open: true,
       port: 8384
     }
   },
