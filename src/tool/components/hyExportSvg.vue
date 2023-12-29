@@ -2,7 +2,7 @@
   <div v-if="true" :class="$style.icons">
     <div>
       <a-tooltip title="svg">
-        <svg id="svg" @click="svgClickHandle">
+        <svg class="img" id="svg" @click="svgClickHandle">
           <use xlink:href="#webstorm"></use>
           <symbol id="webstorm" fill="none" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
             <defs>
@@ -64,7 +64,7 @@
     <div style="min-width: 100px;text-align: center">---></div>
     <div>
       <a-tooltip title="png">
-        <img alt="webstorm" src="../assets/img/webstorm.png" />
+        <img class="img" alt="webstorm" src="../assets/img/webstorm.png" />
       </a-tooltip>
     </div>
   </div>
@@ -130,6 +130,13 @@
 </template>
 <style lang="less" scoped>
 .exhibitArea {
+  height: 100%;
+}
+
+.img {
+  max-width: 150px;
+  max-height: 150px;
+  width: 100%;
   height: 100%;
 }
 

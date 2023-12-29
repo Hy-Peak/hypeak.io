@@ -1,24 +1,24 @@
 <template>
-    <div class="hy-code">
-      <a-collapse collapsible="header">
-        <template #expandIcon="{ isActive }">
-          <caret-right-outlined :rotate="isActive ? 90 : 0" />
+  <div class="hy-code">
+    <a-collapse collapsible="header">
+      <template #expandIcon="{ isActive }">
+        <caret-right-outlined :rotate="isActive ? 90 : 0" />
+      </template>
+      <a-collapse-panel key="1">
+        <template #header>Code</template>
+        <template #extra>
+          <a-tooltip title="copy">
+            <CopyOutlined @click="copyFun(code)" />
+          </a-tooltip>
         </template>
-        <a-collapse-panel key="1">
-          <template #header>Code</template>
-          <template #extra>
-            <a-tooltip title="copy">
-              <CopyOutlined @click="copyFun(code)" />
-            </a-tooltip>
-          </template>
-          <pre>
+        <pre>
         <code>
           <div v-html="codeHeight"></div>
         </code>
       </pre>
-        </a-collapse-panel>
-      </a-collapse>
-    </div>
+      </a-collapse-panel>
+    </a-collapse>
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -38,11 +38,11 @@ defineProps({
 });
 const codeHeight = ref('');
 onMounted(async () => {
-const Prism: any = inject('Prismjs');
-console.log(Prism);
-codeHeight.value = Prism.highlight(svgCode, Prism.languages.javascript, 'javascript');
-Prism.highlightAll();
-})
+  const Prism: any = inject('Prismjs');
+  console.log(Prism);
+  codeHeight.value = Prism.highlight(svgCode, Prism.languages.javascript, 'javascript');
+  Prism.highlightAll();
+});
 const copyFun = async (str: string) => {
   const copyValFun = await useCopy(str);
   copyValFun && message.success('🎉 复制成功!');
