@@ -25,11 +25,7 @@
 import { CaretRightOutlined, CopyOutlined } from '@ant-design/icons-vue';
 import { message } from 'ant-design-vue';
 import { useCopy } from '../../utlis/tool';
-// import Prism from 'prismjs';
 import { svgCode } from '../../tool/assets/code/code';
-// import 'prismjs/components/prism-javascript';
-// import 'prismjs/components/prism-css';
-// import 'prismjs/themes/prism-dark.css';
 
 
 import { onMounted, ref, inject } from 'vue';
@@ -41,13 +37,12 @@ defineProps({
   }
 });
 const codeHeight = ref('');
-// onMounted(async () => {
+onMounted(async () => {
 const Prism: any = inject('Prismjs');
 console.log(Prism);
 codeHeight.value = Prism.highlight(svgCode, Prism.languages.javascript, 'javascript');
 Prism.highlightAll();
-
-// })
+})
 const copyFun = async (str: string) => {
   const copyValFun = await useCopy(str);
   copyValFun && message.success('🎉 复制成功!');
