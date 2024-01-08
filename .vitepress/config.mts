@@ -5,12 +5,25 @@ export default defineConfig({
     server: {
       // open: true,
       port: 8384
+    },
+    build: {
+      rollupOptions: {
+        output: {
+          manualChunks(id) {
+            if (id.includes('node_modules')) {
+              // node_modules 下的文件分割到 vendor 块中
+              return 'vendor';
+            }
+          }
+        }
+      }
     }
   },
   title: 'Hy',
   description: 'hy的知识库',
   srcDir: 'src',
   // 路径
+  // base: '../',
   base: '/hypeak.io/',
   themeConfig: {
     nav: [
