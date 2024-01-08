@@ -20,31 +20,70 @@ export default defineConfig({
         items: [
           {
             text: '基础',
-            link: '/jsq/base/'
+            link: '/js/base/'
           },
           {
             text: '进阶',
-            link: '/jsq/advanced/'
+            link: '/js/advanced/'
           },
           {
             text: '框架',
-            link: '/jsq/framework/'
+            link: '/js/framework/'
           },
           {
             text: '工具',
-            link: '/jsq/tool/'
+            link: '/js/tool/'
           }
         ]
       }
     ],
 
     sidebar: {
-      '/jsq/tool/': [
+      '/html/': [
+        {
+          text: '言',
+          link: '/html/'
+        },
+        {
+          collapsed: false,
+          text: '标签',
+          items: [
+            {
+              text: '常用',
+              link: '/html/commonlyUsed/'
+            },
+            {
+              text: '冷门',
+              link: '/html/unpopular/'
+            },
+            {
+              text: '不知道的属性',
+              link: '/html/unknown/'
+            }
+          ]
+        }
+      ],
+      '/tool/': [
         {
           collapsed: true,
           text: '工具函数',
           items: [
-            { text: '🛠️杂项', link: '/jsq/tool/' }
+            { text: '🛠️杂项', link: '/tool/' }
+          ]
+        }
+      ],
+      '/js/framework/': [
+        {
+          collapsed: true,
+          text: 'Vue',
+          items: [
+            {
+              text: '概览',
+              link: '/js/framework/vue/'
+            },
+            {
+              text: 'animateBase', link: '/js/framework/vue/animate/'
+            }
           ]
         }
       ]

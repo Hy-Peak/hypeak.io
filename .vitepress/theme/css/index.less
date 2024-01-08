@@ -1,16 +1,14 @@
-/**
- * @author Hy
- * @route .vitepress/theme/css
- * @DataType Less
- * @Time  2023/12/15:14:52:46
- * @IDE  WebStorm
- */
 
-//@import 'prismjs/components/prism-javascript.css';
-//@import 'prismjs/components/prism-css';
 @import 'prismjs/themes/prism-dark.css';
 
 :root {
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe, #41d1ff);
+  --hy--bg-color: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  --hy--triangle-bg-color: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+}
+
+html.dark {
+  --hy--triangle-bg-color: linear-gradient(180deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
+  --hy--bg-color: linear-gradient(180deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%);
 }

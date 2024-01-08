@@ -8,8 +8,8 @@ hero:
   tagline: 这是一个很伟大的项目!!!!
   actions:
     - theme: brand
-      text: 开始
-      link: /jsq/
+      text: 启动
+      link: /html/
     - theme: alt
       text: 工具 🛠️
       link: /tool/

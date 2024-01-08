@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 4266383 */
+  /* Color fonts */
+  src: 
+       url('iconfont.woff2?t=1703827706341') format('woff2'),
+       url('iconfont.woff?t=1703827706341') format('woff'),
+       url('iconfont.ttf?t=1703827706341') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hy-vue:before {
+  content: "\e6b9";
+}
+
+.hy-antd:before {
+  content: "\e68d";
+}
+
+.hy-AntDesign:before {
+  content: "\e650";
+}
+
+.hy-Vue:before {
+  content: "\e799";
+}
+
+.hy-taiyang:before {
+  content: "\e69b";
+}
+
+.hy-igw-l-moon:before {
+  content: "\e613";
+}
+
+.hy-igw-f-moon:before {
+  content: "\e61d";
+}
+
