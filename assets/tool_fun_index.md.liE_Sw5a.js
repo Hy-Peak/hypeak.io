@@ -1,1 +1,0 @@
-import{_ as e,c as t,o,b as n}from"./app.jN86BsDL.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"tool/fun/index.md","filePath":"tool/fun/index.md"}'),a={name:"tool/fun/index.md"},s=n("p",null,"111",-1),r=[s];function c(d,i,_,l,p,f){return o(),t("div",null,r)}const x=e(a,[["render",c]]);export{u as __pageData,x as default};
