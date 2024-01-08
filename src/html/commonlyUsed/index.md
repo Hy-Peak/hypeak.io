@@ -1,7 +1,7 @@
 ## \<div>
 最常见的元素，用于将块级元素分组。
 
-<a-card>
+<a-card hoverable>
     <a-space :size="20" class="content">
         <a-tooltip title="正方形">
             <div class="item square"></div>
@@ -110,7 +110,7 @@
 ## \<h1> ~ \<h6>
 标题元素，用于定义标题，h1~h6分别表示6个级别的标题，h1是最高级别的标题，h6是最低级别的标题。
 
-<a-card>
+<a-card hoverable>
     <div class="reset">
         <h1>H1. Huaiyou is god</h1>
         <h2>H2. Huaiyou is god</h2>
