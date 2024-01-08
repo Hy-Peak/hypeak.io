@@ -4,9 +4,6 @@ import { Theme } from 'vitepress';
 import { EnhanceAppContext } from 'vitepress';
 import Antd from 'ant-design-vue';
 import  Prismjs from 'prismjs';
-import 'prismjs/components/prism-javascript'
-import 'prismjs/components/prism-css';
-import 'prismjs/themes/prism-dark.css';
 import '../../src/assets/iconfont/iconfont.css';
 import '../theme/css/reset.css';
 

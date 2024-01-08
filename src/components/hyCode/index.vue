@@ -50,6 +50,8 @@ const copyFun = async (str: string) => {
 </script>
 
 <style scoped>
+@import 'prismjs/themes/prism-dark.css';
+
 .hy-code {
   margin: 1.5rem 0;
 }
